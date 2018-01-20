@@ -1,0 +1,31 @@
+{
+    "name": "blog-client-electron",
+    "version": "1.0.0",
+    "description": "An Electron application for Blog-Client",
+    "main": "app/main.js",
+    "scripts": {
+        "start": "electron app/main.js",
+        "build": "./scripts/build-all.sh",
+        "build:osx": "./scripts/build.sh darwin x64",
+        "build:osx64": "./scripts/build.sh darwin x64",
+        "build:linux32": "./scripts/build.sh linux ia32",
+        "build:linux": "./scripts/build.sh linux x64",
+        "build:linux64": "./scripts/build.sh linux x64",
+        "build:win": ".\\scripts\\build-win32.bat win32 ia32",
+        "build:win32": ".\\scripts\\build-win32.bat win32 ia32",
+        "build:win64": ".\\scripts\\build-win32.bat win32 x64"
+    },
+    "keywords": [
+        "Electron",
+        "blog"
+    ],
+    "author": "Mingtao Lou",
+    "license": "MIT",
+    "dependencies": {
+        "electron": "1.7.10",
+        "electron-packager": "10.1.1",
+        "nconf": "^0.8.4",
+        "electron-localshortcut": "3.1.0",
+        "log4js": "2.4.1"
+    }
+}
