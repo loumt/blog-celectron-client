@@ -1,11 +1,13 @@
 'use strict'
+//init
+const imageFactory = require('./utils/imagesFactory');
 
 const { app, ipcMain } = require("electron")
 const localshortcut = require("electron-localshortcut")
 
 const BlogWindow = require('./windows/BlogWindow')
 
-const Common = require('./configs/common');
+const Common = require('./configs/Common');
 const logger = require('./utils/logger').app();
 
 class BlogClient {

@@ -1,7 +1,9 @@
 {
     "name": "blog-client-electron",
     "version": "1.0.0",
+    "productName": "Blog-Cliet",
     "description": "An Electron application for Blog-Client",
+    "electronVersion": "1.7.10",
     "main": "app/main.js",
     "scripts": {
         "start": "electron app/main.js",
@@ -22,10 +24,14 @@
     "author": "Mingtao Lou",
     "license": "MIT",
     "dependencies": {
+        "async": "^2.6.0",
+        "axios": "^0.17.1",
         "electron": "1.7.10",
-        "electron-packager": "10.1.1",
-        "nconf": "^0.8.4",
         "electron-localshortcut": "3.1.0",
-        "log4js": "2.4.1"
+        "electron-packager": "10.1.1",
+        "lodash": "4.17.4",
+        "log4js": "2.4.1",
+        "nconf": "^0.8.4",
+        "request": "^2.83.0"
     }
 }

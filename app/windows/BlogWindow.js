@@ -1,8 +1,11 @@
 'use strict';
 
 const path = require('path');
+const _ = require('lodash');
+const ImageFactory = require('./../utils/imagesFactory')
 const { app, shell, BrowserWindow } = require('electron');
 const electronLocalShortcut = require('electron-localshortcut');
+const Common = require('./../configs/Common');
 
 class BlogWindow {
     constructor() {
@@ -16,11 +19,13 @@ class BlogWindow {
         this.blogWindow = new BrowserWindow({
             title: 'Blog-Client',
             resizable: true,
+            width: 1560,
+            height: 960,
             center: true,
             show: true,
+            icon: ImageFactory.getImageResource('icon', '256', 'png'),
             frame: true,
             autoHideMenuBar: true,
-            icon: path.join(__dirname, './../statics/images/icon.png'),
             titleBarStyle: 'hidden-inset',
             webPreferences: {
                 javascript: true,
